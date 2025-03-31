@@ -1,0 +1,23 @@
+/*Layer Manager*/
+#layer-list {
+    flex-direction: column;
+    --gap: 0;
+}
+#layer-list > li {
+    display: grid;
+    grid-template-columns: repeat(14, 2rem);
+    align-items: center;
+    width: -webkit-fill-available;
+    border-bottom: 1px solid var(--gray);
+    background: var(--white);
+}
+
+#layer-list > li:hover {
+    background-color: var(--light-gray);
+}
+
+.layer-list-layer-entry {
+    display: flex;
+    grid-column: 2/15;
+    align-items: center;
+}

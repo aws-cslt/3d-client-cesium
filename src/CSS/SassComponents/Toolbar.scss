@@ -1,0 +1,74 @@
+.cslt-toolbar-menu {
+    display: grid;
+    --gap: 0;
+    grid-template-columns: 1fr;
+    color: white;
+    top: 0;
+    left: 0;
+    background: rgba(20, 82, 132, 0.75);
+    //border-bottom-right-radius: 0.625rem;
+}
+
+.toolbar-navigation {
+    /* primary-navigation */
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.toolbar-navigation > li,
+ul {
+    width: fit-content;
+}
+
+.cslt-toolbar-expanded {
+    min-width: 28rem;
+    max-width: 28rem;
+    display: grid;
+}
+
+.csltToolbarHeader {
+    display: grid;
+    // If we ever bring back the 2D/2.5D button, this is the grid spacing for it.
+    //grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--gray);
+}
+
+.toolbar-button {
+    //border: 1px solid var(--gray);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    //border-left: 1px solid var(--gray);
+    border-radius: 0%;
+    padding: 0;
+}
+
+.toolbar-button-image {
+    max-height: 24px;
+    max-width: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+.toolbarLayersLabel {
+    color: var(--dark-gray);
+    font-size: x-large;
+    display: inline-block;
+    padding: 0.8rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cslt-toolbar-menu {
+    background: rgb(255, 255, 255);
+}
+
+.layersHeaderBreak {
+    border-left: 1px solid var(--gray);
+    padding-right: 0.1rem;
+}
+
+.loading-indicator {
+    padding-top: 0.6rem;
+}
