@@ -1,0 +1,268 @@
+.osm-warning-button {
+    background-color: inherit;
+    color: orange;
+    border: none;
+    height: 1.25rem;
+    width: 1.25rem;
+    min-width: 1.25rem;
+    padding: 0;
+    font-weight: 700;
+    font-size: large;
+    accent-color: var(--gray);
+    margin-right: 0.6rem;
+}
+.osm-warning-button:disabled {
+    background-color: inherit;
+    color: orange;
+    border: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    accent-color: var(--gray);
+    margin-right: 0.6rem;
+}
+
+.kml-warning-button {
+    background-color: inherit;
+    color: orange;
+    border: none;
+    height: 1.25rem;
+    width: 1.25rem;
+    min-width: 1.25rem;
+    padding: 0;
+    font-weight: 700;
+    font-size: large;
+    accent-color: var(--gray);
+    margin-right: 0.6rem;
+}
+.kml-warning-button:disabled {
+    background-color: inherit;
+    color: orange;
+    border: none;
+    box-shadow: none;
+    //cursor: not-allowed;
+    accent-color: var(--gray);
+    margin-right: 0.6rem;
+}
+
+.shown-status-button {
+    height: 1.25rem;
+    width: 1.25rem;
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    accent-color: var(--gray);
+    margin-right: 0.6rem;
+}
+.shown-status-button:indeterminate {
+    accent-color: var(--gray);
+}
+
+.layer-entry-button-flex {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer-entry-button-image {
+    height: 90%;
+    width: 90%;
+}
+
+.zoom-to-tiles-button {
+    height: 1.75rem;
+    width: 1.75rem;
+    float: right;
+    min-width: 1.75rem;
+    min-height: 1.75rem;
+}
+
+.remove-button {
+    height: 1.75rem;
+    width: 1.75rem;
+    float: right;
+    min-width: 1.75rem;
+    min-height: 1.75rem;
+}
+
+.layer-up-down-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-button {
+    height: 1.75rem;
+    width: 1.75rem;
+    min-width: 1.75rem;
+    border: none;
+    background-color: white;
+    display: none;
+    font-size: large;
+    font-weight: 700;
+}
+.dropdown-button:hover {
+    box-shadow: none;
+}
+.dropdown-button:disabled {
+    cursor: not-allowed;
+}
+
+.up-button {
+    height: 0.9rem;
+    width: 1.75rem;
+    min-width: 1.75rem;
+    padding: 0;
+}
+
+.down-button {
+    height: 0.9rem;
+    width: 1.75rem;
+    min-width: 1.75rem;
+    padding: 0;
+}
+
+.layer-name {
+    padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+    color: var(--dark-gray);
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-self: center;
+    margin-right: auto;
+}
+
+.layers-grid-break {
+    border-top: 1px solid #444;
+    padding-bottom: 0.1rem;
+    grid-column: 2/11;
+    grid-row: 2/3;
+}
+
+.selector-highlight {
+    grid-column: 3/12;
+    grid-row: 3/4;
+}
+
+.selector-row-one {
+    grid-column: 3/12;
+    grid-row: 4/5;
+}
+
+.selector-row-two {
+    grid-column: 3/12;
+    grid-row: 5/6;
+}
+
+.selector-row-three {
+    grid-column: 3/12;
+    grid-row: 6/7;
+}
+
+.selector-row-four {
+    grid-column: 3/12;
+    grid-row: 7/8;
+}
+
+.selector-row-five {
+    grid-column: 3/12;
+    grid-row: 8/9;
+}
+
+.selector-row-six {
+    grid-column: 3/12;
+    grid-row: 9/10;
+}
+
+.selector-userstyle {
+    grid-column: 3/12;
+    grid-row: 4/5;
+}
+
+.selector-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "label selector";
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    background: inherit;
+}
+
+.selector-label {
+    grid-area: label;
+    color: var(--dark-gray);
+}
+
+.selector {
+    grid-area: selector;
+    accent-color: var(--dark-gray);
+}
+.selector:hover {
+    background-color: var(--light-gray);
+}
+
+.selector-layer-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "label selector";
+    grid-template-columns: 1fr 9fr;
+    grid-column: 1/10;
+    align-items: center;
+}
+
+.selector-layer {
+    position: relative;
+    grid-column: 4/14;
+    grid-row: 1/2;
+}
+.selector-layer-disabled.solid-select-container {
+    color: var(--dark-gray);
+}
+.selector-layer .solid-select-option {
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.selector-layer-label {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-top: 6px;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: end;
+}
+.selector-layer-label-disabled {
+    background-color: var(--gray);
+}
+
+.slider-div {
+    width: calc(100vw - 58px);
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+}
+
+.settings-button-div {
+    position: fixed;
+    bottom: 0px;
+    left: calc(100vw - 58px);
+    height: 29px;
+    width: 29px;
+    padding: 0;
+}
+.settings-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 2px 0px;
+}
+
+.cesium-timeline-ruler {
+    visibility: hidden !important;
+}

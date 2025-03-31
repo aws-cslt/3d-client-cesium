@@ -1,0 +1,26 @@
+---
+version: 0.2
+
+phases:
+    install:
+        runtime-versions:
+            nodejs: 22
+        commands:
+            - echo "Installing pnpm globally..."
+            - npm install -g pnpm
+    pre_build:
+        commands:
+            - echo "Installing dependencies via pnpm..."
+            - pnpm install --no-frozen-lockfile
+    build:
+        commands:
+            - echo "Running build script..."
+            - pnpm build-client-release
+    post_build:
+        commands:
+            - echo "Build completed!"
+            - ls -la
+artifacts:
+    base-directory: web
+    files:
+        - "**/*"
